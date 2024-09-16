@@ -19,9 +19,16 @@
 
 	&-btn {
 		min-width: 100px;
-		padding-inline: 2rem;
+		padding: 1rem 1.25rem;
 		min-height: 75px;
 		font-size: calc(0.75 * var(--font-size-1));
+
+		@media (max-width: 900px) {
+			min-width: 70px;
+			min-height: 50px;
+			padding: 0.25rem 0.5rem;
+
+		}
 
 		&:disabled {
 			opacity: 0.5;

@@ -107,7 +107,7 @@ button {
 
 
 [data-grid] {
-	--_grid-gap: var(--grid-gap, 2rem);
+	--_grid-gap: var(--grid-gap, 1rem);
 	display: grid;
 	grid-template-columns:
 		[full-start left-start] minmax(var(--_grid-gap), 1fr) [content-start right-start] minmax(auto, 40rem) [content-end left-end] minmax(var(--_grid-gap), 1fr) [full-end right-end];
