@@ -3,6 +3,7 @@ import { useStore } from "@nanostores/solid";
 import { sampleGame, type GameData } from "../types/index";
 import { $gameConstantData, $gameCorrectRegistry, $gameCurrentData, $gameOuputs, $gameStatusData, clickOption, startGame } from "../stores/game";
 import "../styles/draft.scss";
+import { $analyticsInfo, $analyticsStatusData } from "../stores/analytics";
 
 interface Props {
 	data: GameData
@@ -15,6 +16,8 @@ export const Draft: Component<Props> = (props) => {
 	const gameStatus = useStore($gameStatusData);
 	const gameCurrent = useStore($gameCurrentData);
 	const gameConstant = useStore($gameConstantData);
+	const analyticsStatus = useStore($analyticsStatusData);
+	const analyticsInfo = useStore($analyticsInfo);
 
 	const clickHandler = (data: string, _: MouseEvent) => {
 		clickOption(gameOutputs().current_option, data)
@@ -67,6 +70,50 @@ export const Draft: Component<Props> = (props) => {
 			<section class="game-key">
 				<p class="game-key-current">{gameOutputs().current_option}</p>
 			</section>
+		</Show>
+
+		<Show when={analyticsStatus().analytics_ended}>
+			<section className="game-analytics">
+				<h2 className="game-analytics-heading">Last Quiz Scores...</h2>
+				<p className="game-analytics-desc"></p>
+
+				<dl className="game-analytics-list">
+
+					<div className="game-analytics-item">
+						<dt className="game-analytics-title">Total Questions</dt>
+						<dd className="game-analytics-text">{analyticsInfo().all_questions_count}</dd>
+					</div>
+
+					<div className="game-analytics-item">
+						<dt className="game-analytics-title">Attempts</dt>
+						<dd className="game-analytics-text">{analyticsInfo().attempts_count}</dd>
+					</div>
+					<div className="game-analytics-item">
+						<dt className="game-analytics-title">Questions Answered</dt>
+						<dd className="game-analytics-text">{analyticsInfo().answered_questions_count}</dd>
+					</div>
+					<div className="game-analytics-item">
+						<dt className="game-analytics-title">Wrong Questions</dt>
+						<dd className="game-analytics-text">{analyticsInfo().wrong_questions_count}</dd>
+					</div>
+
+
+					<div className="game-analytics-item">
+						<dt className="game-analytics-title">Accuracy</dt>
+						<dd className="game-analytics-text">{analyticsInfo().accuracy}%</dd>
+					</div>
+					<div className="game-analytics-item">
+						<dt className="game-analytics-title">Time Taken</dt>
+						<dd className="game-analytics-text">{analyticsInfo().time_taken}s</dd>
+					</div>
+					<div className="game-analytics-item">
+						<dt className="game-analytics-title">Time per Question</dt>
+						<dd className="game-analytics-text">{analyticsInfo().time_per_question}s</dd>
+					</div>
+
+				</dl>
+			</section>
+
 		</Show>
 
 

@@ -43,6 +43,16 @@ export interface GameType {
 	onEnd?: ModeFn
 }
 
+export interface AnalyticsActions {
+	onClick: ModeFn
+	onCorrect: ModeFn
+	onWrong: ModeFn
+	onStart: (all_questions_count: number) => void
+	onSetup: ModeFn
+	onComplete: ModeFn
+	onEnd?: ModeFn
+}
+
 export type ModeObject = Record<ModeType, GameType>;
 
 export const sampleGame: GameData = {

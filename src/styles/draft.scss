@@ -1,7 +1,7 @@
 .game-start-btn {
 	padding-block: 1rem;
-	font-size: var(--font-size-2);
-	margin-block-start: 1rem;
+	font-size: calc(var(--font-size-1) * 1.15);
+	margin-block-start: 0.25rem;
 }
 
 .game-desc {
@@ -93,4 +93,42 @@
 		}
 	}
 
+}
+
+
+.game-analytics {
+	margin-block-start: 0.5rem;
+	padding-block: 1rem;
+	border-top: 2px solid var(--clr-mid-grey);
+
+	&-heading {
+		font-size: var(--font-size-3);
+		line-height: 0.95;
+	}
+
+	&-list {
+		display: flex;
+		flex-flow: row wrap;
+		gap: 1.2rem;
+		margin-block-start: 1.5rem;
+	}
+
+	&-item {
+		display: grid;
+		min-width: 100px;
+		min-height: 75px;
+		place-content: center;
+		place-items: center;
+		background: var(--clr-light-grey);
+		padding-inline: 0.5rem;
+		padding-block: 0.75rem;
+		border: 1px solid var(--clr-mid-grey);
+		border-radius: 0.25rem;
+	}
+
+	&-text {
+		font-family: var(--font-sans-serif);
+		font-size: var(--font-size-3);
+		font-weight: 700;
+	}
 }

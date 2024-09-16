@@ -2,6 +2,7 @@ import { computed, deepMap, map } from "nanostores";
 import { type AnswerData, type AnswerMetadata, type Data, type ProcessedData } from "../types";
 import { MODES, type ModeType } from "../stores/modes"
 import { shuffle } from "../composables";
+import { analyticsActions } from "./analytics";
 
 export const $gameData = map({} as ProcessedData);
 
@@ -121,16 +122,19 @@ export const startGame = (gameData: Data) => {
 
 	const mode = $gameModeData.get().mode
 	MODES[mode]?.onSetup();
+	analyticsActions.onSetup();
 
 	const { processedData, registry } = processGameData(gameData);
+	const all_questions_count = Object.values(gameData).flat().length;
 
 	$gameCorrectRegistry.set(registry);
 	$gameData.set(processedData);
-	$gameConstantData.setKey("all_questions_count", Object.values(gameData).flat().length);
+	$gameConstantData.setKey("all_questions_count", all_questions_count);
 	$gameStatusData.setKey("game_started", true);
 
 	// onStart();
 	MODES[mode]?.onStart();
+	analyticsActions.onStart(all_questions_count);
 }
 
 
@@ -161,10 +165,12 @@ const onCorrect = (key: string, answer: string) => {
 	const isComplete = answeredQuestionsCount === $gameConstantData.get().all_questions_count;
 
 	$gameCurrentData.setKey("answered_questions_count", answeredQuestionsCount);
+	analyticsActions.onCorrect();
 
 
 	if (isComplete) {
 		$gameData.set({});
+		analyticsActions.onComplete();
 		MODES[mode]?.onComplete();
 		$gameStatusData.set({ ...DEFAULT_GAME_STATUS_DATA });
 	} else {
@@ -187,6 +193,7 @@ const onCorrect = (key: string, answer: string) => {
 
 const onWrong = (key: string, answer: string) => {
 	const mode = $gameModeData.get().mode;
+	analyticsActions.onWrong();
 	MODES[mode]?.onWrong();
 }
 
@@ -194,6 +201,7 @@ const onWrong = (key: string, answer: string) => {
 export const clickOption = (key: string, answer: string) => {
 	try {
 		$gameStatusData.setKey("is_marking", true);
+		analyticsActions.onClick();
 		const { isCorrect } = checkOption(key, answer);
 		$gameStatusData.setKey("is_correct", isCorrect);
 
