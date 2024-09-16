@@ -4,6 +4,10 @@
 	margin-block-start: 1rem;
 }
 
+.game-desc {
+	font-size: calc(var(--font-size-1) * 0.85);
+}
+
 .game-options {
 	&-list {
 		display: flex;
