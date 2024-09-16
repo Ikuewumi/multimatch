@@ -1,4 +1,5 @@
 --- 
+import "../styles/index.scss";
 import {Draft} from "../components/Draft";
 import { sampleGame } from "../types";
 ---
@@ -11,7 +12,11 @@ import { sampleGame } from "../types";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
+	<body data-grid>
+		<main>
+
 		<Draft client:only="solid" data={sampleGame} />
+
+		</main>
 	</body>
 </html>

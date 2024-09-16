@@ -1,36 +1,32 @@
-import { For, type Component, Index, onMount, Show, type JSXElement } from "solid-js";
+import { For, type Component, Show, type JSXElement } from "solid-js";
 import { useStore } from "@nanostores/solid";
 import { sampleGame, type GameData } from "../types/index";
-import { $gameConstantData, $gameCorrectRegistry, $gameCurrentData, $gameData, $gameOuputs, $gameStatusData, checkOption, clickOption, startGame } from "../stores/game";
+import { $gameConstantData, $gameCorrectRegistry, $gameCurrentData, $gameOuputs, $gameStatusData, clickOption, startGame } from "../stores/game";
+import "../styles/draft.scss";
 
 interface Props {
 	data: GameData
 }
 
-interface OptionAndKey {
-	key: string
-	option: string
-}
 
-
-export const Draft: Component<Props> = () => {
-	const gameData = useStore($gameData);
+export const Draft: Component<Props> = (props) => {
 	const gameCorrectRegistry = useStore($gameCorrectRegistry);
 	const gameOutputs = useStore($gameOuputs);
 	const gameStatus = useStore($gameStatusData);
 	const gameCurrent = useStore($gameCurrentData);
 	const gameConstant = useStore($gameConstantData);
 
-	const clickHandler = (data: string, event: MouseEvent) => {
-		clickOption(gameOutputs().keys[0], data)
+	const clickHandler = (data: string, _: MouseEvent) => {
+		clickOption(gameOutputs().current_option, data)
 	}
 
 	const clickStart = () => {
-		startGame(sampleGame.data)
+		startGame(props.data.data)
 	}
 
 
 	const StartScreen: JSXElement = <>
+		<h1 className="game-title">{props.data.title}</h1>
 
 		<button onClick={clickStart} class="game-start-btn">Start Game</button>
 
@@ -39,15 +35,17 @@ export const Draft: Component<Props> = () => {
 
 	return <>
 
-		<h1 className="game-start-h1">Sample Game on Prostanoid analoges and Adrenegic Antagonists</h1>
 		<Show fallback={StartScreen} when={gameStatus().game_started}>
 			{/** Status */}
-			<section className="game-status">
-				{gameStatus().is_correct ? "Correct" : "Incorrect"}
-			</section>
-
-			<section className="game-percent">
+			<section className="game-percent"
+			>
 				{gameCurrent().answered_questions_count} / {gameConstant().all_questions_count}
+
+				<span class="game-percent-bar" role="progress" aria-valuemin={0} aria-valuemax={100}
+					aria-valuenow={Math.floor(gameCurrent().answered_questions_count * 100 / gameConstant().all_questions_count)}
+					style={`--value:${Math.floor(gameCurrent().answered_questions_count * 100 / gameConstant().all_questions_count)};`}
+					data-is-correct={gameStatus().is_correct}
+				></span>
 			</section>
 
 			{/** Add options */}
@@ -66,7 +64,7 @@ export const Draft: Component<Props> = () => {
 
 			{/** Add questions */}
 			<section class="game-key">
-				<span className="game-key-current">{gameOutputs().current_option}</span>
+				<p class="game-key-current">{gameOutputs().current_option}</p>
 			</section>
 		</Show>
 

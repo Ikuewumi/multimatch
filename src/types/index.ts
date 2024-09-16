@@ -56,6 +56,7 @@ export const sampleGame: GameData = {
 		"prostaglandin-E1 analogue": ["misoprostol", "alprostadil"],
 		"prostaglandin-I2 analogue": ["eproprostenol"],
 		"prostaglandin-F2 analogue": ["latanoprost", "carboprost"],
-		"prostaglandin analogues": ["misoprostol", "eproprostenol", "latanoprost", "carboprost", "alprostadil"]
+		"prostaglandin analogues": ["misoprostol", "eproprostenol", "latanoprost", "carboprost", "alprostadil"],
+		"indicated for pulmonary arterial hypertension": ["eproprostenol"]
 	}
 }

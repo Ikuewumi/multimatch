@@ -100,8 +100,6 @@ const processGameData = (gameData: Data) => {
 		registry[gameKey] = [];
 	})
 
-	console.log(processedData)
-
 	return { processedData, registry };
 }
 
@@ -138,21 +136,19 @@ export const startGame = (gameData: Data) => {
 
 export const checkOption = (key: string, answer: string) => {
 	const { options, keys } = $gameOuputs.get();
-	console.dir(options, keys)
 	const argumentsAreValid = keys.includes(key) && options.includes(answer);
 
 	if (!argumentsAreValid) throw Error("something went wrong...The option and/or answer are not in storage");
 
 	const optionIsCorrect = $gameData.get()[key][answer] !== undefined;
-	console.log(
-		`
+	/** console.log(`
 Key: ${key}
 Answer: ${answer}
 Options in Key: ${Object.keys($gameData.get()[key])}
 Option Is Correct: ${optionIsCorrect}
 `
 	);
-
+*/
 	return {
 		isCorrect: optionIsCorrect,
 	};
@@ -170,6 +166,7 @@ const onCorrect = (key: string, answer: string) => {
 	if (isComplete) {
 		$gameData.set({});
 		MODES[mode]?.onComplete();
+		$gameStatusData.set({ ...DEFAULT_GAME_STATUS_DATA });
 	} else {
 
 		const newOptions = { ...$gameData.get()[key] };
