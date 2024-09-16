@@ -51,7 +51,7 @@ export const Draft: Component<Props> = () => {
 			</section>
 
 			{/** Add options */}
-			<section class="game-options">
+			<section class="game-options" inert={gameStatus().is_marking}>
 				<ul class="game-options-list">
 					<For each={gameOutputs().options}>
 						{(option, index) => <li data-index={index()} class="game-options-li">

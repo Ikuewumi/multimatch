@@ -53,10 +53,9 @@ export const sampleGame: GameData = {
 		"alpha-adrenergic antagonist": ["phenoxybenzamine", "phentolamine", "yohimbine", "prasozin", "terasozin", "tasmulosin"],
 		"alpha-1 antagonist": ["prasozin", "terasozin", "tasmulosin"],
 		"alpha-2 antagonist": ["yohimbine"],
-		"prostaglandin-E1 analogue": ["misoprostol"],
+		"prostaglandin-E1 analogue": ["misoprostol", "alprostadil"],
 		"prostaglandin-I2 analogue": ["eproprostenol"],
 		"prostaglandin-F2 analogue": ["latanoprost", "carboprost"],
-		"prostaglandin analogues": ["misoprostol", "eproprostenol", "latanoprost", "carboprost"]
-
+		"prostaglandin analogues": ["misoprostol", "eproprostenol", "latanoprost", "carboprost", "alprostadil"]
 	}
 }
