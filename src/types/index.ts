@@ -4,6 +4,7 @@ export interface Metadata {
 	title: string
 	date: string
 	author: string
+	description: string
 }
 
 export interface Author {
@@ -46,6 +47,7 @@ export type ModeObject = Record<ModeType, GameType>;
 
 export const sampleGame: GameData = {
 	title: "Sample Game on Adrenegic Antagonists",
+	description: "",
 	date: "2024-09-10 10:01",
 	author: "ayobami",
 	data: {
@@ -58,5 +60,22 @@ export const sampleGame: GameData = {
 		"prostaglandin-F2 analogue": ["latanoprost", "carboprost"],
 		"prostaglandin analogues": ["misoprostol", "eproprostenol", "latanoprost", "carboprost", "alprostadil"],
 		"indicated for pulmonary arterial hypertension": ["eproprostenol"]
+	}
+}
+
+export const sampleGameTwo: GameData = {
+	title: "Anti-Parkinson Medications",
+	description: "reviewing the various drugs used against parkinson's disease",
+	date: "2024-09-16 21:53",
+	author: "ayobami",
+	data: {
+		"dopamine receptor agonist": ["bromocriptine", "cabergoline", "pergolide", "pramipexole", "ropinirole"],
+		"dopamine precursor": ["levodopa"],
+		"DOPA-decarboxylase inhibitor": ["carbidopa"],
+		"ergot dopamine agonist": ["bromocriptine", "cabergoline", "pergolide"],
+		"COMT-inhibitor": ["entacapone", "tolcapone"],
+		"adverse effect of hepatotoxicity": ["entacapone", "tolcapone"],
+		"central-acting COMT-inhibitor": ["tolcapone"],
+		"MAO-B inhibitor": ["selegiline", "rasagiline"]
 	}
 }

@@ -27,6 +27,7 @@ export const Draft: Component<Props> = (props) => {
 
 	const StartScreen: JSXElement = <>
 		<h1 className="game-title">{props.data.title}</h1>
+		<p className="game-desc">{props.data.description}</p>
 
 		<button onClick={clickStart} class="game-start-btn">Start Game</button>
 
