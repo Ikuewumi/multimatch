@@ -8,12 +8,18 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "vitest"
   },
   "dependencies": {
-    "astro": "^4.5.17"
+    "@astrojs/solid-js": "^4.4.1",
+    "astro": "^4.5.17",
+    "nanostores": "^0.10.3",
+    "solid-js": "^1.8.22"
   },
   "devDependencies": {
-    "sass": "^1.78.0"
+    "@nanostores/solid": "^0.4.2",
+    "sass": "^1.78.0",
+    "vitest": "^2.0.5"
   }
 }
