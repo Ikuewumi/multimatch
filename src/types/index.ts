@@ -89,3 +89,15 @@ export const sampleGameTwo: GameData = {
 		"MAO-B inhibitor": ["selegiline", "rasagiline"]
 	}
 }
+
+
+
+export const sampleGameThree: GameData = {
+	title: "Anti-Parkinson Medications",
+	description: "reviewing the various drugs used against parkinson's disease",
+	date: "2024-09-16 21:53",
+	author: "ayobami",
+	data: {
+
+	}
+}

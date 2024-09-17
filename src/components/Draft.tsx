@@ -81,7 +81,7 @@ export const Draft: Component<Props> = (props) => {
 			</section>
 		</Show>
 
-		<Show when={analyticsInfo().all_questions_count > 0}>
+		<Show when={analyticsInfo().all_questions_count > 0 && !gameStatus().game_started}>
 			<section className="game-analytics">
 				<h2 className="game-analytics-heading">Last Quiz Scores...</h2>
 				<p className="game-analytics-desc"></p>
