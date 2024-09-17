@@ -1,7 +1,7 @@
 import { For, type Component, Show, type JSXElement } from "solid-js";
 import { useStore } from "@nanostores/solid";
 import { sampleGame, type GameData } from "../types/index";
-import { $gameConstantData, $gameCorrectRegistry, $gameCurrentData, $gameOuputs, $gameStatusData, clickOption, startGame } from "../stores/game";
+import { $gameConstantData, $gameCorrectRegistry, $gameCurrentData, $gameOuputs, $gameStatusData, clickOption, startGame, stopGame } from "../stores/game";
 import "../styles/draft.scss";
 import { $analyticsInfo, $analyticsStatusData } from "../stores/analytics";
 
@@ -27,6 +27,10 @@ export const Draft: Component<Props> = (props) => {
 		startGame(props.data.data)
 	}
 
+	const clickStop = () => {
+		stopGame();
+	}
+
 
 	const StartScreen: JSXElement = <>
 		<h1 className="game-title">{props.data.title}</h1>
@@ -40,6 +44,11 @@ export const Draft: Component<Props> = (props) => {
 	return <>
 
 		<Show fallback={StartScreen} when={gameStatus().game_started}>
+			{/** Stop Button */}
+			<button onClick={clickStop} className="game-stop-btn">
+				Stop Game
+			</button>
+
 			{/** Status */}
 			<section className="game-percent"
 			>
@@ -72,7 +81,7 @@ export const Draft: Component<Props> = (props) => {
 			</section>
 		</Show>
 
-		<Show when={analyticsStatus().analytics_ended}>
+		<Show when={analyticsInfo().all_questions_count > 0}>
 			<section className="game-analytics">
 				<h2 className="game-analytics-heading">Last Quiz Scores...</h2>
 				<p className="game-analytics-desc"></p>

@@ -137,6 +137,14 @@ export const startGame = (gameData: Data) => {
 	analyticsActions.onStart(all_questions_count);
 }
 
+export const stopGame = () => {
+
+	const mode = $gameModeData.get().mode
+	MODES[mode]?.onStop();
+	analyticsActions.onSetup();
+	resetGameData();
+
+}
 
 export const checkOption = (key: string, answer: string) => {
 	const { options, keys } = $gameOuputs.get();

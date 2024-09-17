@@ -56,7 +56,6 @@ export const analyticsActions: AnalyticsActions = {
 		$analyticsTimeData.set({ ...DEFAULT_ANALYTICS_TIME_DATA });
 		$analyticsCountData.set({ ...DEFAULT_ANALYTICS_COUNT_DATA });
 		$analyticsStatusData.set({ ...DEFAULT_ANALYTICS_STATUS_DATA });
-		$analyticsInfo.set({ ...DEFAULT_ANALYTICS_INFO });
 	},
 
 	onStart: (all_questions_count) => {

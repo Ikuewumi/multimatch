@@ -1,7 +1,15 @@
 .game-start-btn {
 	padding-block: 1rem;
-	font-size: calc(var(--font-size-1) * 1.15);
+	font-size: calc(var(--font-size-1) * 0.95);
 	margin-block-start: 0.25rem;
+}
+
+.game-stop-btn {
+	padding: 0.25rem 0.5rem 0.35rem;
+	font-size: calc(var(--font-size-1) * 0.75);
+	margin-block-start: 0.25rem;
+	margin-inline-start: auto;
+	width: fit-content;
 }
 
 .game-desc {
@@ -53,12 +61,13 @@
 		font-size: calc(var(--font-size-2) * 0.95);
 		line-height: 1.35;
 		text-align: center;
-		padding-block: 1rem 1.25rem;
+		padding-block: 1.5rem 1.55rem;
 		padding-inline: 1rem;
-		background: var(--clr-dark-grey);
-		color: var(--clr-light-grey);
+		background: var(--clr-background);
+		color: var(--clr-color);
 		outline: 3px dotted currentColor;
-		outline-offset: -7px;
+		border: 2px solid var(--clr-light-grey);
+		outline-offset: -10px;
 		border-radius: 0.25rem;
 		backdrop-filter: blur(5px) drop-shadow(2px 2px 1px #000);
 	}

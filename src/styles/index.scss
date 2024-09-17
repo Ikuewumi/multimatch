@@ -44,8 +44,7 @@
 
 
 
-
-	&[data-dark-theme="true"] {
+	@media(prefers-color-scheme:dark) {
 		--clr-background: hsl(0deg, 0%, 5%);
 		--clr-color: hsl(0deg 0% 80%);
 		--clr-light-grey: hsl(0deg, 0%, 20%);
