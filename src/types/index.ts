@@ -101,6 +101,6 @@ export const sampleGameThree: GameData = {
 		"ester local-anesthetic": ["benzocaine", "tetracaine", "cocaine", "procaine", "novocaine", "pontocaine"],
 		"cocaine alias": ["novocaine"],
 		"pontocaine alias": ["tetracaine"],
-		"amine local-anesthetic": ["lidocaine", "mepivacaine", "bupivacaine", "levobupivacaine", "ropivacaine", "articaine"]
+		"amide local-anesthetic": ["lidocaine", "mepivacaine", "bupivacaine", "levobupivacaine", "ropivacaine", "articaine"]
 	}
 }
