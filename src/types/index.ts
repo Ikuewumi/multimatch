@@ -93,11 +93,14 @@ export const sampleGameTwo: GameData = {
 
 
 export const sampleGameThree: GameData = {
-	title: "Anti-Parkinson Medications",
-	description: "reviewing the various drugs used against parkinson's disease",
+	title: "Local Anesthetics",
+	description: "reviewing the various drugs used for anesthesia",
 	date: "2024-09-16 21:53",
 	author: "ayobami",
 	data: {
-
+		"ester local-anesthetic": ["benzocaine", "tetracaine", "cocaine", "procaine", "novocaine", "pontocaine"],
+		"cocaine alias": ["novocaine"],
+		"pontocaine alias": ["tetracaine"],
+		"amine local-anesthetic": ["lidocaine", "mepivacaine", "bupivacaine", "levobupivacaine", "ropivacaine", "articaine"]
 	}
 }

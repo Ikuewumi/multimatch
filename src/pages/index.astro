@@ -1,7 +1,8 @@
---- 
+---
 import "../styles/index.scss";
-import {Draft} from "../components/Draft";
-import { sampleGameTwo } from "../types";
+import Header from "../components/Header.astro";
+import { Draft } from "../components/Draft";
+import { sampleGameThree } from "../types";
 ---
 
 <html lang="en">
@@ -13,10 +14,9 @@ import { sampleGameTwo } from "../types";
 		<title>Astro</title>
 	</head>
 	<body data-grid>
+		<Header />
 		<main>
-
-		<Draft client:only="solid" data={sampleGameTwo} />
-
+			<Draft client:only="solid" data={sampleGameThree} />
 		</main>
 	</body>
 </html>

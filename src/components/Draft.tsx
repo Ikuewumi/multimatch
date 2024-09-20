@@ -54,7 +54,7 @@ export const Draft: Component<Props> = (props) => {
 			>
 				{gameCurrent().answered_questions_count} / {gameConstant().all_questions_count}
 
-				<span class="game-percent-bar" role="progress" aria-valuemin={0} aria-valuemax={100}
+				<span class="game-percent-bar" role="progressbar" aria-valuemin={0} aria-valuemax={100}
 					aria-valuenow={Math.floor(gameCurrent().answered_questions_count * 100 / gameConstant().all_questions_count)}
 					style={`--value:${Math.floor(gameCurrent().answered_questions_count * 100 / gameConstant().all_questions_count)};`}
 					data-is-correct={gameStatus().is_correct}
