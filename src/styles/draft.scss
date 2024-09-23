@@ -1,7 +1,9 @@
 .game-start-btn {
-	padding-block: 1rem;
-	font-size: calc(var(--font-size-1) * 0.95);
+	padding-block: 1.25rem;
+	font-size: calc(var(--font-size-1) * 1);
 	margin-block-start: 0.25rem;
+	border: 3px solid var(--clr-dark-grey);
+	background: var(--clr-light-grey);
 }
 
 .game-stop-btn {
@@ -76,6 +78,9 @@
 
 .game-percent {
 	display: grid;
+	position: sticky;
+	top: 1rem;
+	z-index: var(--z-dialog);
 
 	&-bar {
 		width: 100%;
@@ -84,6 +89,7 @@
 		border-radius: 0.5rem;
 		margin-top: 0.25rem;
 		position: relative;
+		background: var(--clr-background);
 
 
 		&[data-is-correct=true] {
@@ -123,6 +129,13 @@
 		margin-block-start: 1.5rem;
 	}
 
+	&-list-answers {
+		display: flex;
+		flex-flow: row wrap;
+		gap: 0.75rem;
+		margin-block-start: 1.5rem;
+	}
+
 	&-item {
 		display: grid;
 		min-width: 100px;
@@ -136,9 +149,22 @@
 		border-radius: 0.25rem;
 	}
 
+	&-item-answer {
+		font-size: calc(var(--font-size-1) * 0.75);
+		place-items: start;
+		background: none;
+	}
+
 	&-text {
 		font-family: var(--font-sans-serif);
 		font-size: var(--font-size-3);
 		font-weight: 700;
+	}
+
+	&-text-answer {}
+
+	strong {
+		font-weight: 500;
+		text-decoration: 2px underline var(--clr-primary);
 	}
 }

@@ -5,15 +5,24 @@ import { shuffle } from "../composables";
 import { analyticsActions } from "./analytics";
 
 export const $gameData = map({} as ProcessedData);
+const DEFAULT_OPTION_COUNT = 9;
 
 export const $gameOuputs = computed($gameData, (gameData) => {
 	const gameDataKeys = Object.keys(gameData);
 	const gameDataValues = Object.values(gameData);
 
 	const keys: string[] = shuffle(gameDataKeys);
-	const flatValuesArray: string[] = gameDataValues.flat().map(dataValue => Object.keys(dataValue)).flat();
-	const options: string[] = shuffle(Array.from(new Set(flatValuesArray)));
 	const current_option = keys.length ? keys[0] : null;
+	let options: string[] = [];
+
+	if (current_option) {
+		const correct_answers = $gameCorrectRegistry.get()[current_option];
+		const current_answer = shuffle(Object.keys(gameData[current_option]).filter(option => !correct_answers.includes(option)))[0];
+
+		const flatValuesArray: string[] = gameDataValues.flat().map(dataValue => Object.keys(dataValue)).flat().filter(value => value !== current_answer);
+		options = shuffle([...Array.from(new Set(flatValuesArray)).slice(0, DEFAULT_OPTION_COUNT - 1), current_answer]);
+	}
+
 
 	return { options, keys, current_option };
 })
@@ -134,7 +143,7 @@ export const startGame = (gameData: Data) => {
 
 	// onStart();
 	MODES[mode]?.onStart();
-	analyticsActions.onStart(all_questions_count);
+	analyticsActions.onStart(all_questions_count, registry);
 }
 
 export const stopGame = () => {
@@ -182,7 +191,6 @@ const onCorrect = (key: string, answer: string) => {
 		MODES[mode]?.onComplete();
 		$gameStatusData.set({ ...DEFAULT_GAME_STATUS_DATA });
 	} else {
-
 		const newOptions = { ...$gameData.get()[key] };
 		newOptions[answer].answered = true;
 		$gameCorrectRegistry.setKey(key, [...$gameCorrectRegistry.get()[key], answer]);
@@ -201,7 +209,7 @@ const onCorrect = (key: string, answer: string) => {
 
 const onWrong = (key: string, answer: string) => {
 	const mode = $gameModeData.get().mode;
-	analyticsActions.onWrong();
+	analyticsActions.onWrong(key, answer);
 	MODES[mode]?.onWrong();
 }
 

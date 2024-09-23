@@ -37,6 +37,10 @@
 	--clr-light-primary: hsl(275deg, 80%, 90%);
 	--clr-bg-theme-toggle: var(--clr-dark-grey);
 
+	--z-base: 1;
+	--z-dialog: 4;
+	--z-overlay: 3;
+
 	color-scheme: light;
 
 	font-size: var(--font-size);
@@ -136,6 +140,13 @@ button {
 	white-space: nowrap !important;
 }
 
+button {
+	background: var(--clr-background);
+	color: var(--clr-color);
+	border: 2px solid var(--clr-mid-grey);
+	border-radius: 0.25rem;
+
+}
 
 svg,
 img,

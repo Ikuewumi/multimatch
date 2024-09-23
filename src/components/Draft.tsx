@@ -1,4 +1,4 @@
-import { For, type Component, Show, type JSXElement } from "solid-js";
+import { For, type Component, Show, type JSXElement, createEffect } from "solid-js";
 import { useStore } from "@nanostores/solid";
 import { sampleGame, type GameData } from "../types/index";
 import { $gameConstantData, $gameCorrectRegistry, $gameCurrentData, $gameOuputs, $gameStatusData, clickOption, startGame, stopGame } from "../stores/game";
@@ -18,6 +18,21 @@ export const Draft: Component<Props> = (props) => {
 	const gameConstant = useStore($gameConstantData);
 	const analyticsStatus = useStore($analyticsStatusData);
 	const analyticsInfo = useStore($analyticsInfo);
+
+
+	createEffect(() => {
+		const header = document.querySelector("header.header");
+
+		if (gameStatus().game_started) {
+
+			header.setAttribute("inert", "")
+			header.classList.add("sr-only")
+		} else {
+			header.removeAttribute("inert")
+			header.classList.remove("sr-only")
+		}
+
+	})
 
 	const clickHandler = (data: string, _: MouseEvent) => {
 		clickOption(gameOutputs().current_option, data)
@@ -62,7 +77,7 @@ export const Draft: Component<Props> = (props) => {
 			</section>
 
 			{/** Add options */}
-			<section class="game-options" inert={gameStatus().is_marking}>
+			<section class="game-options" inert={gameStatus().is_marking} disabled={gameStatus().is_marking}>
 				<ul class="game-options-list">
 					<For each={gameOutputs().options}>
 						{(option, index) => <li data-index={index()} class="game-options-li">
@@ -81,7 +96,7 @@ export const Draft: Component<Props> = (props) => {
 			</section>
 		</Show>
 
-		<Show when={analyticsInfo().all_questions_count > 0 && !gameStatus().game_started}>
+		<Show when={analyticsInfo().all_questions_count > 0 && !gameStatus().game_started && analyticsStatus().analytics_ended}>
 			<section className="game-analytics">
 				<h2 className="game-analytics-heading">Last Quiz Scores...</h2>
 				<p className="game-analytics-desc"></p>
@@ -121,6 +136,25 @@ export const Draft: Component<Props> = (props) => {
 					</div>
 
 				</dl>
+			</section>
+
+			<section className="game-analytics">
+				<h2 className="game-analytics-heading">❌ Failed Questions</h2>
+
+
+				<dl className="game-analytics-list-answers">
+
+					<For each={Object.keys(analyticsInfo().correction_data)}>
+						{(question, index) => <div className="game-analytics-item game-analytics-item-answer" data-index={index()}>
+							<dt className="game-analytics-title"><strong>Question</strong>: {question}</dt>
+							<dd className="game-analytics-text-answer"><strong>Answer</strong>: {analyticsInfo().correction_data[question].join(", ")}</dd>
+						</div>}
+
+					</For>
+				</dl>
+
+
+
 			</section>
 
 		</Show>

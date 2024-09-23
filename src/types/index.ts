@@ -46,8 +46,8 @@ export interface GameType {
 export interface AnalyticsActions {
 	onClick: ModeFn
 	onCorrect: ModeFn
-	onWrong: ModeFn
-	onStart: (all_questions_count: number) => void
+	onWrong: (option: string, answer: string) => void
+	onStart: (all_questions_count: number, registry: Data) => void
 	onSetup: ModeFn
 	onComplete: ModeFn
 	onEnd?: ModeFn
@@ -93,13 +93,46 @@ export const sampleGameTwo: GameData = {
 
 
 export const sampleGameThree: GameData = {
+	title: "Introduction to Central Neuropharmacology",
+	description: "reviewing the various terms and drugs",
+	date: "2024-09-17 23:48",
+	author: "ayobami",
+	data: {
+		"different types of neurotransmitters": ["amino-acid neurotransitters", "acetylcholine", "monoamine neurotransmitters"],
+		"monoamine neurotransmitter": ["dopamine", "serotonin", "norepinephrine"],
+		"amino-acid neurotransmitter": ["glutamate", "glycine", "GABA"],
+		"glycine receptor blocker": ["strychnine"],
+		"GABA-A receptor blocker": ["picrotoxin", "bicuculine"],
+		"5-hydroxytryptamine alias": ["serotonin"],
+		"ionotropic glutamate receptor type": ["AMPA", "NMDA", "KA"],
+		"excitatory amino-acid neurotransmitter": ["glutamate"],
+		"inhibitory amino-acid neurotransmitter": ["GABA", "glycine"],
+		"fight-or-flight neurotransmitter": ["epinephrine"],
+		"concentration neurotransmitter": ["norepinephrine"],
+		"pleasure neurotransmitter": ["dopamine"],
+		"mood neurotransmitter": ["serotonin"],
+		"euphoria neurotransmitter": ["endorphins"],
+		"learning neurotransmitter": ["acetylcholine"],
+		"memory neurotransmitter": ["glutamate"],
+		"calming neurotransmitter": ["GABA"],
+		"active component of cannabis": ["Δ9-tetrahydrocannabinol"],
+		"neuropeptide": ["substance P", "somatostatin", "opioids"],
+		"general classification of central-acting drugs": ["sedative-hypnotics", "opioids", "anti-depressants", "anesthetics", "CNS stimulants", "anti-psychotics", "anti-epileptics", "drugs for neurodegenerative diseases"],
+		"antidepressant": ["fluoxetine", "amitriptyaline"]
+
+	}
+}
+
+
+
+export const sampleGameFour: GameData = {
 	title: "Local Anesthetics",
 	description: "reviewing the various drugs used for anesthesia",
 	date: "2024-09-16 21:53",
 	author: "ayobami",
 	data: {
 		"ester local-anesthetic": ["benzocaine", "tetracaine", "cocaine", "procaine", "novocaine", "pontocaine"],
-		"cocaine alias": ["novocaine"],
+		"procaine alias": ["novocaine"],
 		"pontocaine alias": ["tetracaine"],
 		"amide local-anesthetic": ["lidocaine", "mepivacaine", "bupivacaine", "levobupivacaine", "ropivacaine", "articaine"]
 	}
