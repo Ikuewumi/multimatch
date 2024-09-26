@@ -1,0 +1,44 @@
+.home {
+
+	&-title {
+		font-size: calc(1.05 * var(--font-size-4));
+
+	}
+
+	&-desc {
+		font-size: calc(0.75 * var(--font-size-1));
+		line-height: 1.5;
+	}
+}
+
+.games {
+
+	&-list {
+		margin-top: 1rem;
+		display: grid;
+		gap: 0.25rem;
+		list-style: none;
+	}
+
+	&-li {
+		display: contents;
+	}
+
+}
+
+.game {
+
+	&-item {
+		display: grid;
+		gap: 0.25rem;
+		border: 2px solid var(--clr-light-grey);
+		padding: 1rem 1rem 1.25rem;
+		font-size: calc(0.75 * var(--font-size-1));
+	}
+
+	&-link {
+
+		font-size: calc(1 * var(--font-size-1));
+	}
+
+}

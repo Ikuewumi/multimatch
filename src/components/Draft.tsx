@@ -4,9 +4,10 @@ import { sampleGame, type GameData } from "../types/index";
 import { $gameConstantData, $gameCorrectRegistry, $gameCurrentData, $gameOuputs, $gameStatusData, clickOption, startGame, stopGame } from "../stores/game";
 import "../styles/draft.scss";
 import { $analyticsInfo, $analyticsStatusData } from "../stores/analytics";
+import { decodeString } from "../composables";
 
 interface Props {
-	data: GameData
+	data: string
 }
 
 
@@ -19,12 +20,13 @@ export const Draft: Component<Props> = (props) => {
 	const analyticsStatus = useStore($analyticsStatusData);
 	const analyticsInfo = useStore($analyticsInfo);
 
+	console.log(props.data)
+	const data = () => JSON.parse(decodeString(props.data)) as GameData;
 
 	createEffect(() => {
 		const header = document.querySelector("header.header");
 
 		if (gameStatus().game_started) {
-
 			header.setAttribute("inert", "")
 			header.classList.add("sr-only")
 		} else {
@@ -39,7 +41,7 @@ export const Draft: Component<Props> = (props) => {
 	}
 
 	const clickStart = () => {
-		startGame(props.data.data)
+		startGame(data().data)
 	}
 
 	const clickStop = () => {
@@ -48,8 +50,8 @@ export const Draft: Component<Props> = (props) => {
 
 
 	const StartScreen: JSXElement = <>
-		<h1 className="game-title">{props.data.title}</h1>
-		<p className="game-desc">{props.data.description}</p>
+		<h1 className="game-title">{data().title}</h1>
+		<p className="game-desc">{data().description}</p>
 
 		<button onClick={clickStart} class="game-start-btn">Start Game</button>
 

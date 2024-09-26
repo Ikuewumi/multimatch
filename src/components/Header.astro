@@ -7,24 +7,16 @@
 			<li class="header-li">
 				<a href="/" class="header-a">Home</a>
 			</li>
-			<li class="header-li">
-				<a href="/" class="header-a">Archive</a>
-			</li>
 		</ul>
 	</nav>
 </header>
 
 <style lang="scss">
 	.header {
-		padding: 0.5rem 0.75rem 0.65rem;
-		background: var(--clr-light-grey);
-		border: 2px solid var(--clr-dark-grey);
-		border-radius: 0.5rem;
-		margin-top: 0.65rem;
 		font-size: calc(var(--font-size-1) * 0.85);
 		width: fit-content;
 		margin-right: auto;
-		margin: 1.15rem auto 0.95rem 0;
+		margin: 1.15rem auto 0.75rem 0;
 
 		&-nav {
 			display: flex;
@@ -36,6 +28,12 @@
 		&-li {
 			list-style: none;
 			display: contents;
+		}
+
+		&-a {
+			padding: 0.5rem 0.75rem 0.65rem;
+			background: var(--clr-light-grey);
+			border-radius: 0.5rem;
 		}
 	}
 </style>

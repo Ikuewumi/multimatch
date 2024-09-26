@@ -1,0 +1,24 @@
+---
+import "../../styles/index.scss";
+import { encodeString } from "../../composables/index";
+import { Draft } from "../../components/Draft";
+import Layout from "../../layouts/index.astro";
+
+import { getCollection } from "astro:content";
+export async function getStaticPaths() {
+	const gameEntries = await getCollection("game");
+	return gameEntries.map((entry) => ({
+		params: { slug: entry.id },
+		props: { entry },
+	}));
+}
+
+const { entry } = Astro.props;
+---
+
+<Layout>
+	<Draft
+		client:only="solid"
+		data={encodeString(JSON.stringify(entry.data))}
+	/>
+</Layout>

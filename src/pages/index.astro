@@ -1,22 +1,43 @@
 ---
-import "../styles/index.scss";
-import Header from "../components/Header.astro";
-import { Draft } from "../components/Draft";
-import { sampleGameThree } from "../types";
+import "../styles/home.scss";
+import Layout from "../layouts/index.astro";
+import { getCollection } from "astro:content";
+
+const publishedGameEntries = await getCollection("game");
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body data-grid>
-		<Header />
-		<main>
-			<Draft client:only="solid" data={sampleGameThree} />
-		</main>
-	</body>
-</html>
+<Layout>
+	<h1 class="home-title">Welcome to Multimatch!</h1>
+	<p class="home-desc">
+		Here, you can reinforce drugs and terms to their various
+		properties. Here's the archive of games, starting from latest:
+	</p>
+	<ul class="games-list">
+		{
+			publishedGameEntries.map((gameData) => (
+				<li class="games-li">
+					<div class="game-item">
+						<a
+							class="game-link"
+							href={`/game/${gameData.id}`}
+						>
+							<h2>
+								{
+									gameData
+										.data
+										.title
+								}
+							</h2>
+						</a>
+						<p class="game-description">
+							{
+								gameData.data
+									.description
+							}
+						</p>
+					</div>
+				</li>
+			))
+		}
+	</ul>
+</Layout>
