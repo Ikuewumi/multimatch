@@ -1,0 +1,91 @@
+{
+	"title": "Laxatives and Purgatives",
+	"description": "reviewing the term set about laxatives and purgatives",
+	"date": "2024-09-26 15:20",
+	"author": "ayobami",
+	"data": {
+		"alias for laxatives": [
+			"evacuants",
+			"aprients",
+			"cathartics"
+		],
+		"broad classification of the laxatives": [
+			"luminally active agents",
+			"non-specific stimulants",
+			"pro-kinetic agents"
+		],
+		"a type of the luminally active agents": [
+			"bulk-forming agents",
+			"osmotically active agents",
+			"stool-softeners"
+		],
+		"a bulk-forming agent": [
+			"psyllium",
+			"methylcellulose",
+			"bran",
+			"calcium polycarbophil"
+		],
+		"hydrophillic resin": [
+			"calcium polycarbophil"
+		],
+		"contraindication for bulk-forming agents": [
+			"suspected or confirmed obstructive enterophathy",
+			"megacolon or megarectum"
+		],
+		"alias for bulk-forming agents": [
+			"hydrophillic colloids",
+			"bulk-laxatives"
+		],
+		"an osmotically active agent": [
+			"lactulose",
+			"sorbitol",
+			"mannitol",
+			"sodium phosphate",
+			"magnesium citrate",
+			"magnesium silicate",
+			"magnesium hydroxide",
+			"polyethylene glycol solution"
+		],
+		"a saline laxative": [
+			"sodium phosphate",
+			"magnesium citrate",
+			"magnesium silicate",
+			"magnesium hydroxide"
+		],
+		"a stool softener": [
+			"docusate sodium",
+			"docusate calcium",
+			"mineral oil"
+		],
+		"a contraindication for stool softeners": [
+			"renal impairment",
+			"metabolic acidosis"
+		],
+		"a side-effect of bulk laxatives": [
+			"GI symptoms",
+			"initial bloating with fermentable fibres"
+		],
+		"a type of the non-specific laxatives": [
+			"phenylmethane derivatives",
+			"anthraquinones",
+			"rinocleic acid"
+		],
+		"source of rinocleic acid": [
+			"castor oil"
+		],
+		"a phenylmethane": [
+			"bisacodyl"
+		],
+		"an anthraquinone": [
+			"aloe",
+			"cascara",
+			"senna"
+		],
+		"an example of the prokinetics and other constipation agents": [
+			"colchine",
+			"neurotrophin 3",
+			"misoprostol",
+			"tegaserod"
+		]
+	}
+}
