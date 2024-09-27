@@ -17,6 +17,16 @@ const { entry } = Astro.props;
 ---
 
 <Layout>
+	<Fragment slot="meta">
+		<title>{entry.data.title}</title>
+		<meta name="description" content={entry.data.description} />
+		<meta itemprop="name" content={entry.data.title} />
+		<meta itemprop="description" content={entry.data.description} />
+		<link
+			rel="canonical"
+			href={`https://multimatch.netlify.app/${entry.id}`}
+		/>
+	</Fragment>
 	<Draft
 		client:only="solid"
 		data={encodeString(JSON.stringify(entry.data))}

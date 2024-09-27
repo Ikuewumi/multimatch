@@ -2,6 +2,7 @@
 import "../styles/index.scss";
 import Header from "../components/Header.astro";
 import { ViewTransitions } from "astro:transitions";
+import Analytics from "../components/Analytics.astro";
 ---
 
 <html lang="en">
@@ -10,8 +11,27 @@ import { ViewTransitions } from "astro:transitions";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Multimatch - Making fact memorization fun!</title>
-		<slot name="meta" />
+		<meta name="google" content="nositelinkssearchbox" />
+		<base href="https://multimatch.netlify.app" />
+		<link rel="me" href="mailto:ayobamsik@gmail.com" />
+		<link rel="me" href="sms:+2348108567504" />
+		<slot name="meta">
+			<title>Home Page | Multimatch</title>
+			<meta
+				name="description"
+				content="Multimatch - Making fact memorization fun!"
+			/>
+			<meta itemprop="name" content="Content Title" />
+			<meta
+				itemprop="description"
+				content="Multimatch - Making fact memorization fun!"
+			/>
+			<link
+				rel="canonical"
+				href="https://multimatch.netlify.app"
+			/>
+		</slot>
+		<Analytics measurementId="G-32DMP7SREZ" />
 		<ViewTransitions />
 	</head>
 	<body data-grid>

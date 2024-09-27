@@ -12,6 +12,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@astrojs/partytown": "^2.1.2",
     "@astrojs/solid-js": "^4.4.1",
     "astro": "^4.5.17",
     "nanostores": "^0.10.3",
