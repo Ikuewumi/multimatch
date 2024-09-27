@@ -1,0 +1,59 @@
+{
+	"title": "Anti-Psychotic Medications: Typical Antipsychotics",
+	"description": "reviewing the various aspects of typical antipsychotics",
+	"date": "2024-09-29 07:59",
+	"author": "ayobami",
+	"data": {
+		"a classification of phenothiazines": [
+			"group 1",
+			"group 2",
+			"group 3"
+		],
+		"group of phenothiazine that has aliphatic side chain": [
+			"group 1"
+		],
+		"group of phenothiazine that has piperidine group in side chain": [
+			"group 2"
+		],
+		"group of phenothiazine that has piperazine group in side chain": [
+			"group 3"
+		],
+		"group 1 side effect": [
+			"pronouced sedation",
+			"moderate anti-muscarinic effects",
+			"moderate EPSE"
+		],
+		"group 2 side effect": [
+			"moderate sedation",
+			"pronounced anti-muscarinic effects",
+			"little EPSE"
+		],
+		"group 3 side effect": [
+			"little sedation",
+			"little anti-muscarinic effects",
+			"pronounced EPSE"
+		],
+		"a classification of first-gen anti-psychotics": [
+			"butyrophenone",
+			"thiozanthene",
+			"phenothiazene",
+			"substituted benzamide",
+			"diphenylbutylpiperidine",
+			"dihydroindolone derivative",
+			"dibenzoxapene derivative"
+		],
+		"prototype phenothiazine": [
+			"chlorpromazine"
+		],
+		"effect of typical antipsychotic on a group of schizophrenic symptoms": [
+			"improves positive symptoms",
+			"does not improve negative symptoms",
+			"does not improve cognitive symptoms"
+		],
+		"effect of atypical antipsychotic on a group of schizophrenic symptoms": [
+			"improves positive symptoms",
+			"improves negative symptoms",
+			"improves cognitive symptoms"
+		]
+	}
+}

@@ -1,0 +1,74 @@
+{
+	"title": "Anti-Psychotic Medications: Examples",
+	"description": "reinforcing the examples of various types of anti-psychotics",
+	"date": "2024-09-29 08:30",
+	"author": "ayobami",
+	"data": {
+		"a class of first-gen anti-psychotics": [
+			"butyrophenones",
+			"thioxanthenes",
+			"phenothiazenes",
+			"substituted benzamides",
+			"diphenylbutylpiperidines",
+			"dihydroindolone derivatives",
+			"dibenzoxapene derivatives"
+		],
+		"a group 1 phenothiazine": [
+			"chlorpromazine",
+			"promazine",
+			"triflupromazine"
+		],
+		"a group 2 phenothiazine": [
+			"thioridazine",
+			"mesoridazine"
+		],
+		"a group 3 phenothiazine": [
+			"prochloperazine",
+			"fluphenazine",
+			"trifluoperazine",
+			"butaperazine",
+			"perpenazine",
+			"acetophenazine",
+			"carphenazine"
+		],
+		"prototype phenothiazine": [
+			"chlorpromazine"
+		],
+		"a butyrophenone": [
+			"haloperidol",
+			"benperidol",
+			"droperidol"
+		],
+		"prototype butyrophenone": [
+			"haloperidol"
+		],
+		"a thioxanthene": [
+			"flupethixol",
+			"zuclopenthixol",
+			"thiothixene"
+		],
+		"a diphenylbutylpiperidine": [
+			"pimoxide",
+			"fluspirelene"
+		],
+		"a dihydroindolone derivative": [
+			"molindone"
+		],
+		"a substituted benzamide": [
+			"sulpiride"
+		],
+		"a second-gen antipsychotic": [
+			"amisulpiride",
+			"clozapine",
+			"risperidone",
+			"olanzapine",
+			"quetiapine",
+			"sertindole",
+			"xotepine"
+		],
+		"a third gen antipsychotic": [
+			"aripiprazole",
+			"brexipiprazole"
+		]
+	}
+}

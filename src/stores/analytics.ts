@@ -59,7 +59,6 @@ const processAnalyticsData = () => {
 		correction_data
 	})
 
-	console.log($analyticsInfo.get().correction_data);
 }
 
 

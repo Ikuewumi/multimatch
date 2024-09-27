@@ -1,0 +1,136 @@
+{
+	"title": "Anti-hyperlipidemics",
+	"description": "reviewing various drugs used in hyperlipidemia",
+	"date": "2024-09-29 21:53",
+	"author": "ayobami",
+	"data": {
+		"major class of drugs used in hyperlipidemia": [
+			"statins",
+			"fibrates",
+			"nicotinic acid",
+			"bile acid resins",
+			"cholesterol absorption inhibitors"
+		],
+		"a type of the newer anti-hyperlipidemic drugs": [
+			"PCSK9-inhibitors",
+			"APO-B synthesis inhibitor",
+			"thyromimetics",
+			"MTTP inhibitor",
+			"CETP inhibitor"
+		],
+		"full meaning of MTTP": [
+			"microsomal triglyceride transport protein"
+		],
+		"full meaning of CETP": [
+			"cholesterol ester transport protein"
+		],
+		"full meaning of PCSK-9": [
+			"proprotein convertase subticilin kexin 9"
+		],
+		"class I": [
+			"statins"
+		],
+		"class II": [
+			"nicotinic acid"
+		],
+		"class III": [
+			"bile acid resins"
+		],
+		"class IV": [
+			"fibrates"
+		],
+		"class V": [
+			"cholesterol absorption inhibitors"
+		],
+		"a statin": [
+			"rosuvastatin",
+			"atorvastatin",
+			"simvastatin",
+			"pravastatin",
+			"lovastatin",
+			"pitavastatin"
+		],
+		"most potent statin": [
+			"rosuvastatin"
+		],
+		"statin with highest HDL increase effect": [
+			"simvastatin"
+		],
+		"drug that reduces fibrinogen": [
+			"pravastatin",
+			"fenofibrate"
+		],
+		"least potent statin": [
+			"lovastatin"
+		],
+		"2nd most potent statin": [
+			"atorvastatin"
+		],
+		"3rd most potent statin": [
+			"simvastatin"
+		],
+		"4th most potent statin": [
+			"pravastatin"
+		],
+		"a bile acid resin": [
+			"cholesevelam",
+			"colestipol",
+			"colestyramine"
+		],
+		"best bile acid resin": [
+			"cholesevelam"
+		],
+		"non-antihyperlipidemic drug that bile acid resins interact with": [
+			"digoxin",
+			"morphine",
+			"thyroxine"
+		],
+		"class of drugs bile acid resins interact with": [
+			"statins"
+		],
+		"MOA of statins": [
+			"inhibition of HMG-CoA synthase"
+		],
+		"MOA of ezetimibe": [
+			"inhibition of NPC1C1"
+		],
+		"MOA of fibrates": [
+			"activation of PPAR-𝝰"
+		],
+		"a fibrate": [
+			"gemfibrozil",
+			"fenofibrate",
+			"benzafibrate"
+		],
+		"a steroid absorption inhibitor": [
+			"ezetimibe"
+		],
+		"a PCSK-9 inhibitor": [
+			"evolocumab",
+			"alirocumab",
+			"bococizumab"
+		],
+		"an APO-B synthesis inhibitor": [
+			"mipomersen"
+		],
+		"a MTTP inhibitor": [
+			"lopitamide"
+		],
+		"a thyromimetic": [
+			"eprotirome"
+		],
+		"a CETP": [
+			"dalcetrapibe",
+			"torcetrapibe"
+		],
+		"fibrate that has no myopathy": [
+			"benzafibrate"
+		],
+		"drug that reduces TGs by ~40%": [
+			"nicotinic acid"
+		],
+		"drug that reduces HDL by ~20-30%": [
+			"nicotinic acid"
+		]
+	}
+}

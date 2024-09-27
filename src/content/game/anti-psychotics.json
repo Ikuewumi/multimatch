@@ -1,0 +1,73 @@
+{
+	"title": "Anti-Psychotic Medications: Dopamine",
+	"description": "reviewing dopamine",
+	"date": "2024-09-28 21:53",
+	"author": "ayobami",
+	"data": {
+		"alias for anti-psychotics": [
+			"anti-schizophrenic drugs",
+			"neuroleptics",
+			"major tranquilizers"
+		],
+		"mental disorder characterized by disconnection from reality": [
+			"schizophrenia"
+		],
+		"dopamine receptor": [
+			"D1",
+			"D2",
+			"D3",
+			"D4",
+			"D5"
+		],
+		"receptor that activates adenylate cyclase": [
+			"D1",
+			"D5"
+		],
+		"receptor that inhibits adenylate cyclase": [
+			"D2",
+			"D3",
+			"D4"
+		],
+		"D1-like receptor": [
+			"D1",
+			"D5"
+		],
+		"D2-like receptor": [
+			"D2",
+			"D3",
+			"D4"
+		],
+		"alias for D1a": [
+			"D1"
+		],
+		"alias for D1b": [
+			"D5"
+		],
+		"dopaminergic neuronal pathway": [
+			"mesolimbic",
+			"mesocortical",
+			"nigrostriatal",
+			"tuberoinfundibular"
+		],
+		"product of dopamine metabolism by COMT": [
+			"homovanillic acid"
+		],
+		"the receptor mainly responsible for action of antipsychotics": [
+			"D2"
+		],
+		"function of mesocortical pathway": [
+			"thought",
+			"cognitive function",
+			"reward and motivation"
+		],
+		"function of nigrostriatal pathway": [
+			"motor control"
+		],
+		"function of tuberoinfundibular pathway": [
+			"supression of prolactin release"
+		],
+		"function of dopamine in CTZ": [
+			"induction of emesis"
+		]
+	}
+}

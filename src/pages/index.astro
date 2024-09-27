@@ -3,7 +3,9 @@ import "../styles/home.scss";
 import Layout from "../layouts/index.astro";
 import { getCollection } from "astro:content";
 
-const publishedGameEntries = await getCollection("game");
+const publishedGameEntries = (await getCollection("game")).sort(
+	(a, b) => +new Date(b.data.date) - +new Date(a.data.date)
+);
 ---
 
 <Layout>
