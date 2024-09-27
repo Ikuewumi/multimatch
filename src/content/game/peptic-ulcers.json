@@ -4,13 +4,13 @@
 	"date": "2024-09-27 13:53",
 	"author": "ayobami",
 	"data": {
-		"H2-antagonists": [
+		"H2-antagonist": [
 			"cimetidine",
 			"ranitidine",
 			"famotidine",
 			"nizatidine"
 		],
-		"proton-pump inhibitors": [
+		"proton-pump inhibitor": [
 			"omeprazole",
 			"esomeprazole",
 			"lansoprazole",

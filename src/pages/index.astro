@@ -12,7 +12,7 @@ const publishedGameEntries = (await getCollection("game")).sort(
 	<h1 class="home-title">Welcome to Multimatch!</h1>
 	<p class="home-desc">
 		Here, you can reinforce drugs and terms to their various
-		properties. Here's the archive of games, starting from latest:
+		properties. Here's the archive of all {publishedGameEntries.length} term sets, starting from latest:
 	</p>
 	<ul class="games-list">
 		{

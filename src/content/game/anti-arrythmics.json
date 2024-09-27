@@ -1,0 +1,69 @@
+{
+	"title": "Anti-arrythmics: Examples",
+	"description": "check out the anti-arrythmic drugs and the class each of them belongs to...",
+	"date": "2024-09-29 21:55",
+	"author": "ayobami",
+	"data": {
+		"alias for class I drugs": [
+			"Na⁺ channel blockers"
+		],
+		"alias for class II drugs": [
+			"𝝱 blockers"
+		],
+		"alias for class III drugs": [
+			"K⁺ channel blockers"
+		],
+		"alias for class IV drugs": [
+			"Ca²⁺ channel blockers"
+		],
+		"alias for class V drugs": [
+			"miscallenous drugs"
+		],
+		"class Ia drug": [
+			"procainamide",
+			"quinidine",
+			"disopyramide"
+		],
+		"class Ib drug": [
+			"lidocaine",
+			"mexelitine"
+		],
+		"class Ic drug": [
+			"flecainide",
+			"propafenone"
+		],
+		"class I drug": [
+			"procainamide",
+			"quinidine",
+			"disopyramide",
+			"lidocaine",
+			"mexelitine",
+			"flecainide",
+			"propafenone"
+		],
+		"class II drug": [
+			"atenolol",
+			"esmolol",
+			"metoprolol",
+			"propanolol",
+			"carvedilol",
+			"labetalol",
+			"acebutolol"
+		],
+		"class III drug": [
+			"amiodarone",
+			"sotalol",
+			"dofelitide"
+		],
+		"class IV drug": [
+			"verapamil",
+			"diltiazem"
+		],
+		"class V drug": [
+			"digoxin",
+			"adenosine",
+			"magnesium sulfate",
+			"ranolazine"
+		]
+	}
+}

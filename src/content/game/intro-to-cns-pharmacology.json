@@ -1,6 +1,6 @@
 {
 	"title": "Introduction to Central Neuropharmacology",
-	"description": "reviewing the various terms and drugs",
+	"description": "reviewing the various terms and drugs in this material",
 	"date": "2024-09-17 23:48",
 	"author": "ayobami",
 	"data": {
@@ -68,10 +68,9 @@
 		"active component of cannabis": [
 			"Δ9-tetrahydrocannabinol"
 		],
-		"neuropeptide": [
+		"a neuropeptide": [
 			"substance P",
-			"somatostatin",
-			"opioids"
+			"somatostatin"
 		],
 		"general classification of central-acting drugs": [
 			"sedative-hypnotics",

@@ -1,4 +1,4 @@
-import { For, type Component, Show, type JSXElement, createEffect } from "solid-js";
+import { For, type Component, Show, type JSXElement, createEffect, onCleanup } from "solid-js";
 import { useStore } from "@nanostores/solid";
 import { sampleGame, type GameData } from "../types/index";
 import { $gameConstantData, $gameCorrectRegistry, $gameCurrentData, $gameOuputs, $gameStatusData, clickOption, startGame, stopGame } from "../stores/game";
@@ -35,6 +35,7 @@ export const Draft: Component<Props> = (props) => {
 
 	})
 
+
 	const clickHandler = (data: string, _: MouseEvent) => {
 		clickOption(gameOutputs().current_option, data)
 	}
@@ -47,6 +48,10 @@ export const Draft: Component<Props> = (props) => {
 		stopGame();
 	}
 
+
+	onCleanup(() => {
+		stopGame();
+	})
 
 	const StartScreen: JSXElement = <>
 		<h1 className="game-title">{data().title}</h1>

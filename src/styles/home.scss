@@ -30,14 +30,14 @@
 
 	&-item {
 		display: grid;
-		gap: 0.25rem;
+		gap: 0.35rem;
 		border: 2px solid var(--clr-light-grey);
 		padding: 1rem 1rem 1.25rem;
 		font-size: calc(0.75 * var(--font-size-1));
 	}
 
 	&-link {
-
+		width: fit-content;
 		font-size: calc(1 * var(--font-size-1));
 	}
 
