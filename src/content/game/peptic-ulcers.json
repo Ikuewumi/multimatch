@@ -25,6 +25,15 @@
 			"prostaglandin E2",
 			"prostaglandin I2"
 		],
+		"gastric secretion stimulating hormone": [
+			"gastrin",
+			"acetylcholine",
+			"histamine"
+		],
+		"gastric secretion inhibiting hormone": [
+			"prostaglandin E2",
+			"prostaglandin I2"
+		],
 		"specific ACh receptor for stimulating gastric acid production": [
 			"M3 receptor on parietal cells",
 			"M1 receptor on histamine-containing cells"
