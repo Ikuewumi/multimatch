@@ -20,7 +20,6 @@ export const Draft: Component<Props> = (props) => {
 	const analyticsStatus = useStore($analyticsStatusData);
 	const analyticsInfo = useStore($analyticsInfo);
 
-	console.log(props.data)
 	const data = () => JSON.parse(decodeString(props.data)) as GameData;
 
 	createEffect(() => {
