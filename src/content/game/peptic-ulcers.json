@@ -1,0 +1,72 @@
+{
+	"title": "Drug Therapy for Peptic Ulcer Disease I",
+	"description": "reviewing the various drugs used against peptic ulcer disease, part I",
+	"date": "2024-09-27 13:53",
+	"author": "ayobami",
+	"data": {
+		"H2-antagonists": [
+			"cimetidine",
+			"ranitidine",
+			"famotidine",
+			"nizatidine"
+		],
+		"proton-pump inhibitors": [
+			"omeprazole",
+			"esomeprazole",
+			"lansoprazole",
+			"panteprazole",
+			"rabeprazole",
+			"dexalonsazole"
+		],
+		"gastric secretion controlling hormone": [
+			"gastrin",
+			"histamine",
+			"acetylcholine",
+			"prostaglandin E2",
+			"prostaglandin I2"
+		],
+		"specific ACh receptor for stimulating gastric acid production": [
+			"M3 receptor on parietal cells",
+			"M1 receptor on histamine-containing cells"
+		],
+		"cause of peptic ulcer": [
+			"H. pylori",
+			"NSAIDs use",
+			"glucocorticoids",
+			"zollinger-ellison syndrome",
+			"smoking",
+			"excessive alcohol intake",
+			"stress",
+			"hyperparathyroidism",
+			"blood group O"
+		],
+		"class of therapy for peptic ulcer disease": [
+			"agents that inhibit/reduce acid secretion",
+			"agents that promote mucosal defense"
+		],
+		"class of agents that reduce acid secretion": [
+			"antacids",
+			"H2-receptor antagonists",
+			"proton pump inhibitors"
+		],
+		"an antacid": [
+			"sodium bicarbonate",
+			"calcium carbonate",
+			"magnesium hydroxide",
+			"aluminium hydroxide",
+			"magnesium trisilicate mixture"
+		],
+		"side effect of magnesium salts": [
+			"osmotic diarrhea"
+		],
+		"side effect of aluminium salts": [
+			"constipation",
+			"phosphate deficiency",
+			"bone resorption",
+			"muscle weakness"
+		],
+		"advantage of magnesium hydroxide": [
+			"no belching or distension"
+		]
+	}
+}
