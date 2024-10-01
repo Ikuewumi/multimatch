@@ -1,0 +1,95 @@
+{
+	"title": "Anti-diabetics: Examples",
+	"description": "reviewing some example of anti-diabetic drugs",
+	"date": "2024-10-02 12:21",
+	"author": "ayobami",
+	"data": {
+		"a type of insulin prep": [
+			"rapid-acting insulin",
+			"short-acting insulin",
+			"intermediate-acting insulin",
+			"long-acting insulin"
+		],
+		"a rapid-acting insulin": [
+			"lispro",
+			"aspart",
+			"glulisine"
+		],
+		"a short-acting insulin": [
+			"humulin-R",
+			"novolin-R",
+			"regular-iletin 2"
+		],
+		"an intermediate-acting insulin": [
+			"humulin-N",
+			"novolin-N",
+			"neutral protamine hagedorn"
+		],
+		"meaning of NPH": [
+			"neutral protamine hagedorn"
+		],
+		"a long-acting insulin": [
+			"extended insulin zinc suspension",
+			"detemir",
+			"glargine"
+		],
+		"a class of insulin secretagogues": [
+			"sulfonylureas",
+			"meglitinides",
+			"DPP4-inhibitors",
+			"GLP-1 agonists"
+		],
+		"a class of the agents affecting incretin": [
+			"DPP4-inhibitors",
+			"GLP-1 agonists"
+		],
+		"a 1st-gen sulfonuylurea": [
+			"chlopropamide",
+			"tolbutamide"
+		],
+		"a 2nd-gen sulfonylurea": [
+			"glipizide",
+			"glyburide",
+			"glimepiride"
+		],
+		"alias for glibenclamide": [
+			"glyburide"
+		],
+		"a meglitinide": [
+			"repaglinide",
+			"nateglinide"
+		],
+		"a GLP-1 receptor agonist": [
+			"exanatide",
+			"liraglutide"
+		],
+		"a DPP4-inhibitor": [
+			"stagliptin",
+			"saxagliptin"
+		],
+		"a class of insulin sensitizers": [
+			"bigaunides",
+			"thiazolidinediones"
+		],
+		"a bigaunide": [
+			"metformin"
+		],
+		"a thiazolidinedione": [
+			"pioglitazone",
+			"rosiglitazone"
+		],
+		"a class of the miscallenous hypoglycemics": [
+			"𝛂-glucosidase inhibitors",
+			"SGLT-2 inhibitors"
+		],
+		"an 𝛂-glucosidase inhibitor": [
+			"acarbose",
+			"miglitol"
+		],
+		"a SGLT-2 inhibitor": [
+			"canagliflozin",
+			"dapaliflozin",
+			"bexagliflozin"
+		]
+	}
+}

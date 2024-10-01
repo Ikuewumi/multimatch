@@ -1,0 +1,82 @@
+{
+	"title": "Anti-diabetics",
+	"description": "reviewing some key terms in the anti-diabetics material. Quick disclaimer: values may differ according to different guidelines",
+	"date": "2024-10-02 12:20",
+	"author": "ayobami",
+	"data": {
+		"normal fasting blood sugar in mg/dL": [
+			"99 or below"
+		],
+		"normal random blood sugar in mg/dL": [
+			"139 or below"
+		],
+		"normal glycated hemoglobin in %": [
+			"~5"
+		],
+		"prediabetic fasting blood sugar in mg/dL": [
+			"100 to 125"
+		],
+		"prediabetic random blood sugar in mg/dL": [
+			"140 to 199"
+		],
+		"prediabetic glycated hemoglobin in %": [
+			"5.9 to 6.4"
+		],
+		"diabetic fasting blood sugar in mg/dL": [
+			"126 or above"
+		],
+		"diabetic random blood sugar in mg/dL": [
+			"200 or above"
+		],
+		"diabetic glycated hemoglobin in %": [
+			"6.5 or above"
+		],
+		"types of diabetes mellitus": [
+			"type I",
+			"type 2",
+			"gestational"
+		],
+		"onset of action of rapid-acting insulin": [
+			"15mins"
+		],
+		"time of peak-concentration of rapid-acting insulin": [
+			"1 to 3hours"
+		],
+		"duration of action of rapid-acting insulin": [
+			"3 to 5hours"
+		],
+		"onset of action of short-acting insulin": [
+			"30mins to 1hour"
+		],
+		"time of peak-concentration of short-acting insulin": [
+			"1 to 3hours"
+		],
+		"duration of action of short-acting insulin": [
+			"5 to 7hours"
+		],
+		"onset of action of intermediate-acting insulin": [
+			"1 to 1.5hours"
+		],
+		"time of peak-concentration of intermediate-acting insulin": [
+			"8 to 12hours"
+		],
+		"duration of action of intermediate-acting insulin": [
+			"18 to 24hours"
+		],
+		"onset of action of long-acting insulin": [
+			"4 to 8hours"
+		],
+		"time of peak-concentration of long-acting insulin": [
+			"10 to 30hours"
+		],
+		"duration of action of long-acting insulin": [
+			"over 36hours"
+		],
+		"a type of insulin prep": [
+			"rapid-acting insulin",
+			"short-acting insulin",
+			"intermediate-acting insulin",
+			"long-acting insulin"
+		]
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"title": "Androgens: Testosterone",
+	"description": "reviewing testosterone",
+	"date": "2024-10-02 17:02",
+	"author": "ayobami",
+	"data": {
+		"a hormone that stimulates steroidogenesis in leydig cells": [
+			"LH"
+		],
+		"an alias for interstitial-cell stimulating hormone": [
+			"LH"
+		],
+		"a precursor for testosterone": [
+			"dehydroepiandrosterone",
+			"androstenedione"
+		],
+		"metabolite of testosterone": [
+			"DHT"
+		],
+		"organs that metabolize testosterone into DHT": [
+			"prostate",
+			"seminal vesicles",
+			"epididymis",
+			"skin"
+		],
+		"anabolic action of testosterone": [
+			"protein synthesis",
+			"growth",
+			"salt and water retention"
+		],
+		"a reservoir protein for testosterone": [
+			"sex-steroid binding globulin"
+		],
+		"half life of testosterone": [
+			"10 to 21mins"
+		],
+		"route of administration for testosterone": [
+			"subcutaneous",
+			"transdermal",
+			"topical"
+		]
+	}
+}

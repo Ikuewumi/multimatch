@@ -1,0 +1,54 @@
+{
+	"title": "Androgens and Anti-androgens: Examples",
+	"description": "majorly reviewing some examples of various androgens and anti-androgens",
+	"date": "2024-10-02 17:05",
+	"author": "ayobami",
+	"data": {
+		"a testosterone ester": [
+			"testosterone enanthate",
+			"testosterone propionate",
+			"testosterone undecanoate",
+			"testosterone cypionate"
+		],
+		"an orally-administered testosterone-ester": [
+			"testosterone undecanoate"
+		],
+		"ratio of the androgenic to anabolic effect of testosterone": [
+			"1 to 1"
+		],
+		"ratio of the androgenic to anabolic effect of mesterolone": [
+			"1 to 2"
+		],
+		"a testosterone analog": [
+			"mesterolone",
+			"fluoxymesterone",
+			"danazol",
+			"methyltestosterone"
+		],
+		"an antiandrogen that inhibits androgen synthesis": [
+			"ketoconazole",
+			"finasteride"
+		],
+		"an antiandrogen that competitively inhibits androgen at its receptors": [
+			"cyproterone",
+			"cyprotetone acetate",
+			"flutamide",
+			"bicalutamide",
+			"nilutamide",
+			"spironolactone"
+		],
+		"a drug used in heart failure": [
+			"spironolactone"
+		],
+		"a drug used for peripheral vascular disease": [
+			"cilostazole",
+			"naftifuridyl",
+			"pentoxyfilline"
+		],
+		"an anabolic steroid": [
+			"stanozolol",
+			"oxymetholone",
+			"fluoxymesterone"
+		]
+	}
+}
