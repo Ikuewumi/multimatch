@@ -1,0 +1,74 @@
+{
+	"title": "Local Anesthetics: Examples",
+	"description": "reviewing various local anesthetics, the class they belong to and the various other names..",
+	"date": "2024-10-01 07:33",
+	"author": "ayobami",
+	"data": {
+		"an ester anesthetic": [
+			"cocaine",
+			"procaine",
+			"tetracaine",
+			"benzocaine",
+			"novocaine",
+			"pontocaine"
+		],
+		"an amide anesthetic": [
+			"lidocaine",
+			"mepivacaine",
+			"bupivacaine",
+			"levobupivacaine",
+			"ropivacaine",
+			"articaine",
+			"xylocaine",
+			"marcaine",
+			"naropin",
+			"carbocaine",
+			"isocaine"
+		],
+		"alias of procaine": [
+			"novocaine"
+		],
+		"alias of tetracaine": [
+			"pontocaine"
+		],
+		"alias of lidocaine": [
+			"xylocaine"
+		],
+		"alias of bupivacaine": [
+			"marcaine"
+		],
+		"alias of ropivacaine": [
+			"naropin"
+		],
+		"alias of mepivacaine": [
+			"carbocaine",
+			"isocaine"
+		],
+		"alias of novocaine": [
+			"procaine"
+		],
+		"alias of pontocaine": [
+			"tetracaine"
+		],
+		"alias of xylocaine": [
+			"lidocaine"
+		],
+		"alias of marcaine": [
+			"bupivacaine"
+		],
+		"isomer of marcaine": [
+			"levobupivacaine"
+		],
+		"alias of naropin": [
+			"ropivacaine"
+		],
+		"alias of isocaine": [
+			"mepivacaine",
+			"carbocaine"
+		],
+		"alias of carbocaine": [
+			"mepivacaine",
+			"isocaine"
+		]
+	}
+}
