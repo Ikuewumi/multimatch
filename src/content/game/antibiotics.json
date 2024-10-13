@@ -1,0 +1,60 @@
+{
+	"title": "The Use of Antibiotics in Surgery",
+	"description": "reviewing various facts about antibiotics in the sphere of surgery",
+	"date": "2024-10-12 19:30",
+	"author": "ayobami",
+	"data": {
+		"a molecular antibiotic classification": [
+			"beta-lactam",
+			"penicillin",
+			"cephalosporin",
+			"monobactam",
+			"macrolide",
+			"tetracycline",
+			"quinolone",
+			"aminoglycoside",
+			"sulfonamide",
+			"glycopeptide",
+			"oxazolidinone"
+		],
+		"a type of wound": [
+			"clean",
+			"clean-contaminated",
+			"contaminated",
+			"dirty"
+		],
+		"a wound made in the theatre following asepsis and not cutting into a luminal organ": [
+			"clean"
+		],
+		"a chemical product of an organism that can inhibit the growth of other organisms": [
+			"antibiotic"
+		],
+		"a chemical that can inhibit the growth of other organisms": [
+			"antimicrobial"
+		],
+		"a type of antibiotic that could cause steven johnson syndrome": [
+			"sulfonamide"
+		],
+		"a severe allergic reaction characterized by panmucositis": [
+			"steven johnson syndrome"
+		],
+		"a side effect of antibiotics due to its oral route of administration": [
+			"nausea",
+			"vomitting",
+			"diarrhea"
+		],
+		"a side effect of antibiotics due to intravenous route of administration": [
+			"phlebothrombosis",
+			"thrombophlebitis"
+		],
+		"thrombosis in a vein independent of inflammation in the vein": [
+			"phlebothrombosis"
+		],
+		"vein inflammation related to a blood clot": [
+			"thrombophlebitis"
+		],
+		"a side effect of antibiotics due to intramuscular route of administration": [
+			"sterile pus"
+		]
+	}
+}
