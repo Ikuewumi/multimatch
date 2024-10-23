@@ -12,13 +12,6 @@
 		"mental disorder characterized by disconnection from reality": [
 			"schizophrenia"
 		],
-		"dopamine receptor": [
-			"D1",
-			"D2",
-			"D3",
-			"D4",
-			"D5"
-		],
 		"receptor that activates adenylate cyclase": [
 			"D1",
 			"D5"
@@ -49,8 +42,17 @@
 			"nigrostriatal",
 			"tuberoinfundibular"
 		],
-		"product of dopamine metabolism by COMT": [
+		"principal product of dopamine metabolism in humans": [
 			"homovanillic acid"
+		],
+		"product of dopamine metabolism by catechol-o-methyl transferase": [
+			"3-methoxytyramine"
+		],
+		"product of dopamine metabolism by aldehyde dehydrogenase": [
+			"homovanillic acid"
+		],
+		"product of dopamine metabolism by monoamine oxidase": [
+			"3,4-dihydroxylphenylacetic acid"
 		],
 		"the receptor mainly responsible for action of antipsychotics": [
 			"D2"
@@ -68,6 +70,13 @@
 		],
 		"function of dopamine in CTZ": [
 			"induction of emesis"
+		],
+		"a receptor in the CTZ": [
+			"H1",
+			"NK1",
+			"M1",
+			"D2",
+			"5-HT3"
 		]
 	}
 }

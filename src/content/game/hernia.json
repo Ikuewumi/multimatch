@@ -1,0 +1,84 @@
+{
+	"title": "Hernia in Surgery: The Basics",
+	"description": "reviewing the surgical basics of hernia...",
+	"date": "2024-10-24 19:00",
+	"author": "ayobami",
+	"data": {
+		"an abnormal protrusion of an organ through a defect in its containing cavity": [
+			"hernia"
+		],
+		"the 2nd most common hernia": [
+			"femoral"
+		],
+		"the most common hernia": [
+			"inguinal"
+		],
+		"hernia classification": [
+			"external",
+			"internal",
+			"congenital",
+			"acquired"
+		],
+		"hernia type": [
+			"inguinal",
+			"femoral",
+			"epigastric",
+			"umbilical",
+			"spigelian",
+			"incisional",
+			"diaphragmatic",
+			"para-esophageal",
+			"para-duodenal"
+		],
+		"hernia that is more common in females than males": [
+			"femoral"
+		],
+		"hernia that is more common in males than females": [
+			"inguinal"
+		],
+		"hernia that protrudes through a surgical scar": [
+			"incisional"
+		],
+		"class of hernia that protrudes through body wall": [
+			"external"
+		],
+		"class of hernia that does not protrude through body wall": [
+			"internal"
+		],
+		"type of external hernia": [
+			"inguinal",
+			"femoral",
+			"umbilical",
+			"spigelian",
+			"epigastric",
+			"incisional"
+		],
+		"type of internal hernia": [
+			"diaphragmatic",
+			"para-esophageal",
+			"para-duodenal"
+		],
+		"hernia that passes through the linea-semilunaris": [
+			"spigelian"
+		],
+		"term describing a hernia that can pushed back into the body": [
+			"reducible"
+		],
+		"term describing a hernia that cannot pushed back into the body": [
+			"irreducible",
+			"incarcerated"
+		],
+		"term describing when a hernia compromises the vasculature of its contents, causing ischemia": [
+			"strangulated"
+		],
+		"the structure that holds the herniated contents": [
+			"hernial sac"
+		],
+		"the narrowest portion of a hernial sac": [
+			"neck"
+		],
+		"the expanded top portion of a hernial sac": [
+			"fundus"
+		]
+	}
+}

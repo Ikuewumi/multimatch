@@ -1,0 +1,84 @@
+{
+	"title": "Disinfection and Sterilization",
+	"description": "reviewing cards for various definitions and examples of disinfectants, antiseptics et.al.",
+	"date": "2024-10-20 19:39",
+	"author": "ayobami",
+	"data": {
+		"complete elimination of all forms of microbial life": [
+			"sterilization"
+		],
+		"removal of the vegetative form of micro-organisms": [
+			"disinfection"
+		],
+		"term for disinfectant that can be used safely on living tissues": [
+			"antiseptic"
+		],
+		"process of removing pathogens from items": [
+			"decontamination"
+		],
+		"a state of benig free from pathogenic microbes": [
+			"asepsis"
+		],
+		"a situation in which the replication of a microbe is inhibited without killing": [
+			"bacteriostasis"
+		],
+		"a broad class of physical agents of sterilization": [
+			"heat",
+			"radiation"
+		],
+		"a type of heat used in sterilization": [
+			"dry heat",
+			"moist heat"
+		],
+		"the standard sterilization method in hospitals": [
+			"autoclaving"
+		],
+		"advantage of autoclaving": [
+			"non-toxic",
+			"rapid sterilization",
+			"ability to penetrate medical packets and instruments"
+		],
+		"disadvantage of autoclaving": [
+			"can cause metallic rusting",
+			"can't be used for heat-labile items"
+		],
+		"type of radiation": [
+			"ionizing radiation",
+			"ultraviolet radiation"
+		],
+		"advantage of radiation": [
+			"can be used for heat-labile items"
+		],
+		"MOA of radiation in sterilization": [
+			"inhibition of DNA replication"
+		],
+		"reason for sterilization": [
+			"to prevent transmission of nocosomial infections",
+			"to acheive asepsis in surgery",
+			"to improve patient prognosis"
+		],
+		"an aldehyde chemical sterilization agent": [
+			"formaldehyde",
+			"glutaraldehyde"
+		],
+		"a phenol chemical sterilization agent": [
+			"chlorhexidine",
+			"savlon"
+		],
+		"a halogen-reducing chemical sterilization agent": [
+			"hydrochloride",
+			"povidone-iodine"
+		],
+		"a heavy metal chemical sterilization agent": [
+			"silver",
+			"mercury"
+		],
+		"a surface-acting chemical sterilization agent": [
+			"cetrimide",
+			"benzalkonium chloride"
+		],
+		"a chemical sterilization agent that releases free radicals": [
+			"hydrogen peroxide"
+		]
+	}
+}
